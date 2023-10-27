@@ -33,8 +33,6 @@ void preencherVetor(struct Pessoa *vetor, int tamanho)
 
         printf("Digite o nome da Pessoa %d: \n", i + 1);
         scanf("%s[^\n]", vetor[i].nome);
-        // scanf("%c");
-        //fgets(vetor[i].nome, 50, stdin);
         printf("Digite o salário da Pessoa %d: \n", i + 1);
         scanf("%f", &vetor[i].salario);
     }

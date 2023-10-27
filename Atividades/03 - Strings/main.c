@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main(int argc, char const *argv[])
+int main()
 {
 
     char numero = '3';
@@ -54,7 +54,7 @@ int main(int argc, char const *argv[])
     {
         printf("NAO E MINUSCULO\n");
     }
-    else 
+    else
     {
         printf("E MINUSCULO \n");
     }
@@ -64,9 +64,9 @@ int main(int argc, char const *argv[])
     if (isalnum(letra) == 0)
     {
         printf("NAO E UMA LETRA\n");
-    }else 
+    }else
         printf("E UMA LETRA OU NUMERO\n");
-    
+
     // getchar();
 
     return 0;

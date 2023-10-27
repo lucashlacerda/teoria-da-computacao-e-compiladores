@@ -4,6 +4,7 @@ do vetor e impressão do vetor seja realizado por funções.*/
 #include <stdio.h>
 #include <stdlib.h>
 
+// Alocação dinâmica de memória usando malloc
 void *alocarMemoria(int n)
 {
     int *array = (int *)malloc(n * sizeof(int));
@@ -15,6 +16,8 @@ void *alocarMemoria(int n)
     }
 }
 
+// Preencher o array
+
 void preencheArray(int *array, int n)
 {
     for (int i = 0; i < n; i++)
@@ -22,6 +25,8 @@ void preencheArray(int *array, int n)
         array[i] = i * 10;
     }
 }
+
+// Imprimir o array
 
 void imprimiArray(int *array, int n)
 {
@@ -37,13 +42,11 @@ int main()
     int *array, n;
     printf("Digite o tamanho do array: ");
     scanf("%d", &n);
-    // Alocação dinâmica de memória usando malloc
+
     array = alocarMemoria(n);
 
-    // Preencher o array
     preencheArray(array, n);
 
-    // Imprimir o array
     imprimiArray(array, n);
 
     // Liberar a memória alocada com malloc
