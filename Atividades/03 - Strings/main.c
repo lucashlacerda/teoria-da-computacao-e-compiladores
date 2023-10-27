@@ -67,7 +67,5 @@ int main()
     }else
         printf("E UMA LETRA OU NUMERO\n");
 
-    // getchar();
-
     return 0;
 }

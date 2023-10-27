@@ -8,20 +8,17 @@ int somaSequencia (int numero){
         return numero + somaSequencia(numero - 1);
     }
 }
-int main(int argc, char const *argv[])
+int main()
 {
-
     int numero;
 
     printf("Somando numeros da sequencia ate zero: \n\n");
     printf("Digite um numero: ");
     scanf("%d", &numero);
 
-   int resultado = somaSequencia(numero);
+    int resultado = somaSequencia(numero);
 
-   printf("Se somarmos o numero %d com seus antecesores ate 1 o resultado sera: %d \n", numero, resultado);
-
-   
+    printf("Se somarmos o numero %d com seus antecesores ate 1 o resultado sera: %d \n", numero, resultado);
     return 0;
 }
 

@@ -9,12 +9,11 @@ int potencia(int base, int expoente){
     }
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
 
     int base, expoente;
 
-    printf("Vamos calcular a potencia de um numero!\n\n");
     printf("Digite a BASE da operacao: \n");
     scanf("%d", &base);
 
